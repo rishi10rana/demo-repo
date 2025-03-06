@@ -11,8 +11,6 @@ git commit -m "Added index.html & Command.txt" -m "some description"
 git push origin main
 // This command i used to push our local changes to our git repo.
 
-
-
 // To connect my any local repo to any github repo
 git remote add origin <repo ssh address>
 
@@ -21,6 +19,25 @@ git remote -v
 
 // if you want to use push command in shortcut and from next time dont want to write origin main thing , set the -u upstream flag.
 git push -u origin main
+
+// to see which branches you currently have
+git branch
+
+// to craete a new branch and switch to it
+git checkout -b <new-branch-name>
+
+// if you want to switch branch
+git checkout <branch-to-switch>
+
+// to see any difference means things added to other branch, to compare 
+git diff <branch_name>
+
+// to delete the branch locally after it has been pull request in main branch
+git branch -d <branch_to_delete>
+
+// to add and commit a file automatically together only works for already created which is modified
+git commit -am "message"
+
 
 // consider you are working in your local branch but at the same time main branch is being updated by developers so 
 // to keep your local branch updated with the things in master you can merge main branch current changes to your local branch
@@ -40,21 +57,3 @@ git log
 
 // we can also undo commits to specific commit and undo all hard changes
 git reset --hard <git-commit-hash-value>
-
-// to see which branches you currently have
-git branch
-
-// to craete a new branch and switch to it
-git checkout -b <new-branch-name>
-
-// if you want to switch branch
-git checkout <branch-to-switch>
-
-// to see any difference means things added to other branch, to compare 
-git diff <branch_name>
-
-// to delete the branch locally after it has been pull request in main branch
-git branch -d <branch_to_delete>
-
-// to add and commit a file automatically together only works for already created which is modified
-git commit -am "message"
