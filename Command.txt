@@ -22,6 +22,24 @@ git remote -v
 // if you want to use push command in shortcut and from next time dont want to write origin main thing , set the -u upstream flag.
 git push -u origin main
 
+// consider you are working in your local branch but at the same time main branch is being updated by developers so 
+// to keep your local branch updated with the things in master you can merge main branch current changes to your local branch
+git merge main
+
+// UNDOING IN GIT
+
+// we can undo any added (stagged thing) back to unstaged
+git reset 
+git reset <specific file>
+
+// we can also undo commits to back/previous 1 commit
+git reset HEAD~1
+
+// to view your git commit history 
+git log
+
+// we can also undo commits to specific commit and undo all hard changes
+git reset --hard <git-commit-hash-value>
 
 // to see which branches you currently have
 git branch
