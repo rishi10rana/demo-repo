@@ -1,0 +1,7 @@
+
+git status 
+// This command tells us what files are changed , modified , and untracked or tracked.
+
+git add <filename> ,  git add .
+// This command used to track and add changes.
+
