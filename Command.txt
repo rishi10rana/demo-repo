@@ -10,3 +10,14 @@ git commit -m "Added index.html & Command.txt" -m "some description"
 
 git push origin main
 // This command i used to push our local changes to our git repo.
+
+
+
+// To connect my any local repo to any github repo
+git remote add origin <repo ssh address>
+
+// To view my current repo is connected to which github repos 
+git remote -v
+
+// if you want to use push command in shortcut and from next time dont want to write origin main thing , set the -u upstream flag.
+git push -u origin main
