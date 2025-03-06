@@ -5,3 +5,8 @@ git status
 git add <filename> ,  git add .
 // This command used to track and add changes.
 
+git commit -m "Added index.html & Command.txt" -m "some description"
+// This is used to save our changes but locally in our machine
+
+git push origin main
+// This command i used to push our local changes to our git repo.
